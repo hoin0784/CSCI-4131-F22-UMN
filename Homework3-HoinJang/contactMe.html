@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSCI4131 homework3(contactMe) - Hoin Jang</title>
+    <link href="resources/css/myStyle.css" rel="styleSheet" type="text/css">
+    <script defer src="resources/js/contactMe.js"></script>
+</head>
+<body>
+    <nav id="naviPart">
+        <!-- &nbsp is make one blank-->
+        <a href="myAboutMe.html" target="_blank"> About me &nbsp;</a>
+        <a href="myContacts.html" target="_blank"> Contacts &nbsp;</a>
+        <a href="myWidgets.html" target="_blank"> myWidgets</a>
+        <a href="contactMe.html" target="_blank">Contact me</a>
+    </nav>
+    <div class = "wrapper">
+        <div class = "card">
+            <form action ="https://www-users.cselabs.umn.edu/~joh13266/contactMe.php" method ="post">
+            
+                    <h1>Contact Me</h1>
+
+                    <p>Required fields are marked with <em>*</em></p>
+                        <label for = "postTitle">Title: </label><em>*</em><br>
+                        <input type = "text" name = "postTitle" id = "postTitle" required> <br>
+                    
+                        <label for = "email"> Email: <em>*</em><br></label>
+                        <input type = "text" name = "email" id = "email" required><br>
+                    
+                        <label for = "username">Username: <em>*</em><br></label>
+                        <input type = "text" name = "username" id = "username" required><br>
+                     
+                        <label for = "link">Link: <br></label>
+                        <input type = "text" name = "link" id = "link"><br>
+                    
+
+                <div id ="WrapFieldAndMessage">
+                        <div id= "field">
+                                <!-- The <fieldset> tag is used to group related elements in the <form> element into one group.-->
+                            <fieldset>
+                                <!-- <legend> is a tag that gives a title to the grouping section -->
+                                <legend>Category of Message: <em>*</em></legend>
+                                <input type="radio" name="category" id="question" value="question" required> Question<br>
+                                <input type="radio" name="category" id="comment" value="comment" required> Comment<br>
+                                <input type="radio" name="category" id="concern" value="concern" required> Concern <br>
+                            </fieldset>
+                        </div>
+                                <!-- This message will be hidden unill the user is concerned button-->
+                        <div id="Concern_Message">
+                                    In order to best address your concern, <br>
+                                    please make sure to list the specfic way <br>
+                                    in which I have wronged you
+                        </div>
+                </div>
+                    <label for = "text">Message: <em>*</em><br></label>
+                    <textarea id = "text" name = "message" rows = "5" cols = "25" required></textarea><br>
+
+                    <input type = "submit" value = "submit"> 
+            </form>
+        </div>
+    </div>
+</body>
+</html>

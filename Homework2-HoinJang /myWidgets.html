@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSCI4131 homework2(myWidgets) - Hoin Jang</title>
+    <link href="resources/css/myStyle.css" rel="styleSheet" type="text/css">
+
+    <!-- call the css functions and javascript functions-->
+    <link rel="stylesheet" href="resources/css/timeWidget.css">
+    <link rel="stylesheet" href="resources/css/passwordWidget.css">
+    <script async defer src="resources/js/passwordWidget.js"></script>
+    <script async defer src="resources/js/timeWidget.js"></script>
+    
+</head>
+    <body>
+        <nav id = "naviPart">
+            <a href="myAboutMe.html" target="_blank"> About me &nbsp;</a>               <!-- &nbsp is make one blank-->
+            <a href="myContacts.html" target="_blank"> Contacts &nbsp;</a>
+            <a href="myWidgets.html" target="_blank"> myWidgets</a>
+        </nav>
+    
+    <h1>MyWidgets</h1>
+
+    <div id = "container">
+
+        <div >
+            <p>My favorite Blizard Opening Cinematic</p>
+        
+            <!--Put the inline frame for inserting another webpage into a web page.-->
+            <iframe id="Blizard" width="600" height="450" src="https://www.youtube.com/embed/MVbeoSPqRs4"
+                title="StarCraft 2 Cinematic"> </iframe>
+        </div>
+        
+        <div>My favorite foot ball player Sonny's twitter
+        
+            <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">
+                    A special thank you to all of you Spurs supporters for this season 🤍The atmospheres have
+                    been amazing because of you. It is an honour for me to be voted the Supporters Club, One Hotspur and Junior
+                    One
+                    Hotspur player of the season. We will fight until the final whistle next week!
+                    <a href="https://t.co/EGisbPKyzo">pic.twitter.com/EGisbPKyzo</a>
+                </p>&mdash; Son Heung-min (@Sonny7)
+                <a href="https://twitter.com/Sonny7/status/1525897554541613056?ref_src=twsrc%5Etfw">May 15, 2022</a>
+        
+            </blockquote>
+        </div>
+        <script async src="https://platform.twitter.com/widgets.js"></script>
+        
+        <!--From these line, the code is for the passwordStrength and Time -->
+        <div id="passwordContainer">
+            <div id="header">
+                <h2>Password Strength Checking with JS</h2>
+                <hr>
+            </div>
+                <div id="content1">
+                    <form id="register" name="register">
+                        <label for="password">Password :</label>
+    
+                        <input name ="password" 
+                               id   ="password" 
+                               type ="password" 
+                               placeholder="Type Your Password here">
+    
+                        &nbsp;&nbsp;
+    
+                        <span id="pwdresult"></span>
+                    </form>
+                </div>
+        </div>
+
+        <div id="TimeContainer">
+            <div id="Time">
+                <h2>Time Until the end of the semester</h2>
+                <hr>
+            </div>
+                
+            <div id="content2">
+                <span id="TimeResult"></span>
+                    &nbsp;&nbsp;
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

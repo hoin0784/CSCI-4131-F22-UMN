@@ -1,0 +1,170 @@
+    #naviPart{                         /* Make the navigation for linking to myContacts,myWidgets and myAboutMe */
+        display: flex;
+    
+        justify-content: space-around;
+        
+        background-color:goldenrod;
+        text-align:center;                     
+    }
+    #naviPart :hover{                  /* Used the hover when somebody mouse over the navigation links */
+        color:skyblue;
+    }
+                          
+    b{                                 /* Those three (b,strong,i), emphasize  word*/
+        color:goldenrod;
+    }
+    
+    strong,em{
+        color: red;
+    }
+    i{
+        color:rgb(102, 78, 75);
+    }
+    li{                                /* Make li's font-size to 20px */
+        font-size : 20px;             
+    }
+
+    #naviPart a{                       /* Design each of the navigation bar*/
+        border-radius: 3em;
+        box-shadow: 0 0 0.5em;
+        background-color: beige;
+        padding: 10px;
+    }
+   
+    #myName{                           /* Adjust size of myName in myAboutme.html*/
+        text-align: center;
+        font-family: 'Nabla', cursive;
+        font-size: 10vw;
+    }
+    #MyPicture{                        /* Adjust size of MyPicture in myAboutme.html*/
+        display:block;
+        margin: auto; 
+
+        max-width: 50%;
+        height: auto;  
+        border-radius: 3em; 
+    }
+
+    #GopherPic{                         /* Adjust size of GopherPicture in myContacts.html */
+        height:20em;
+        width: 20em;
+        padding: 3em;
+        margin: 5em;
+    }
+    
+    table{                              /* Design(?) and adjust a table position */
+        border: 5px solid #444444;    
+        border-collapse: collapse;                               
+    }
+    th,td{                              /* Design and resize the th,td of table */
+        border: 4px solid #444444;  
+        padding: 20px;                       
+        
+    }
+
+    div.tableContainer{                 /* positioning the table and set as center */
+        display: flex;
+        justify-content: center;
+    }
+
+    tr:nth-child(even){
+        background-color: goldenrod;
+    }
+    tr:nth-child(odd){
+        background-color: skyblue;
+    }
+
+    .Dinnaken,.Stadium,.Youtube,.UmnIT,.RecCenter{  /* Resize the picture and set as display: none  */
+        display: none;
+        height : 100px;
+        width : 100px;
+    }
+    #Address1:hover .Dinnaken {                     /* Used the hover when somebody mouse over the address of dinnaken*/        
+        display:block;
+        float: right;
+    }
+    #Address2:hover .Stadium{                       /* Used the hover when somebody mouse over the address of Stadium*/ 
+        display: block;
+        float : right;
+    }
+    #Address3:hover .Youtube{                       /* Used the hover when somebody mouse over the address of Youtube*/ 
+        display: block;
+        float : right;
+    }
+    #Address4:hover .UmnIT{                         /* Used the hover when somebody mouse over the address of UMNIT*/ 
+        display: block;
+        float : right;
+    }
+    #Address5:hover .RecCenter{                     /* Used the hover when somebody mouse over the address of RecCenter*/ 
+        display: block;
+        float : right;
+    }  
+
+    .wrapper{
+        display:flex;                                /* Arrange the class */
+        justify-content: center;
+
+    }
+    div.card{                                       /* make my hobby part and my name as border and resize it. */
+        border-radius: 3em;
+        box-shadow: 0 0 0.5em;
+        display: inline-block;
+        /*width:30em;*/
+        width:50%;
+        height:auto;
+        margin: 2em;
+        padding: 20px;
+        background-color:beige;
+        
+    }
+    .card h1{           
+        text-align: center;
+        font-size: 2em;
+    }
+    h1{                                             /*Set h1 in myContacts.html, myWidgets.html, myAboutme.html to center*/
+        text-align: center;
+        padding:10px;
+    }
+    
+    body{                                           /* Set my webpage background as gray*/
+        background-color:gray;
+    }
+
+    #Blizard{                                       /*  Made border radius for the Blizard cinematic video  */
+        border-radius: 3em;
+    }
+
+   #widgets1{                                       /* arrange the place*/
+       justify-content: center;
+       float:left;
+       margin-left: 10em;
+   }
+   #widgets2{                                       /* arrange the place*/
+       justify-content: center;
+       float:right;
+       margin-right: 10em;
+   }
+
+   #container{                                      /* Made for container for password + Time */
+       display: flex;
+       justify-content: space-around;
+       flex-wrap: wrap;
+   }
+   
+   @font-face{                                      /* Change the font of "myAboutme.html" */
+    font-family: Nabla;
+    src: url(/resources/fonts/Nabla/Nabla-Regular-VariableFont_EDPT\,EHLT.ttf);
+    
+   }
+  
+   div#WrapFieldAndMessage{                         /* The message from the "Contact me" will be shown next to the Category of Message */          
+       display: flex;
+   }
+
+   #Concern_Message{                                /*  Make a red border for the concern message  */
+        border: 3px solid red;   
+        border-collapse: collapse; 
+        margin: 1em;
+        padding: 5px;
+   }
+    
