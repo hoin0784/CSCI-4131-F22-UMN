@@ -36,10 +36,11 @@ Figure:6 When the user clicked the Coffman pictures link.
 <img src = "resources/screenshot/coffman.png">
 
 Figure:7 When the user clicked the OuttaSpace MP3.
+
 <img src = "resources/screenshot/OuttaSpace.png">
 
 Figure:8 Before the user clicks the Search button with HTTP request search.
-<img src = "resources/screenshot/Beforehttprequest.png">
+<img src = "resources/screenshot/beforehttprequest.png">
 
 Figure 9: After the user clicked the Search button, it redirects to the HTTP request Youtube search video. This is an example of the server handling a redirect request.
 <img src = "resources/screenshot/Afterhttprequest.png">
