@@ -1,0 +1,80 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title CSCI4131 homework5(myWidgets) - Hoin Jang
+  link(href='resources/css/myStyle.css' rel='styleSheet' type='text/css')
+  // call the css functions and javascript functions
+  link(rel='stylesheet' href='resources/css/timeWidget.css')
+  link(rel='stylesheet' href='resources/css/passwordWidget.css')
+  link(rel='stylesheet' href='resources/css/weatherWidget.css')
+  link(rel='stylesheet' href='resources/css/clickWidget.css')
+  script(defer='' src='resources/js/weatherWidget.js')
+  script(defer='' src='resources/js/passwordWidget.js')
+  script(defer='' src='resources/js/timeWidget.js')
+  script(defer='' src='resources/js/clickWidget.js')
+
+body 
+  include theNav.pug
+
+h1 MyWidgets
+#container
+  div
+    p My favorite Blizard Opening Cinematic
+    // Put the inline frame for inserting another webpage into a web page.
+    iframe#Blizard(width='600' height='450' src='https://www.youtube.com/embed/MVbeoSPqRs4' title='StarCraft 2 Cinematic')  
+  div
+    | My favorite foot ball player Sonny&apos;s twitter
+    blockquote.twitter-tweet
+      p(lang='en' dir='ltr')
+        | A special thank you to all of you Spurs supporters for this season &#x1F90D;The atmospheres have
+        | been amazing because of you. It is an honour for me to be voted the Supporters Club, One Hotspur and Junior
+        | One
+        | Hotspur player of the season. We will fight until the final whistle next week!
+        a(href='https://t.co/EGisbPKyzo') pic.twitter.com/EGisbPKyzo
+      | &mdash; Son Heung-min (@Sonny7)
+      a(href='https://twitter.com/Sonny7/status/1525897554541613056?ref_src=twsrc%5Etfw') May 15, 2022
+  script(async='' src='https://platform.twitter.com/widgets.js')
+  // From these line, the code is for the passwordStrength and Time
+  #passwordContainer
+    #header
+      h2 Password Strength Checking with JS
+      hr
+    #content1
+      form#register(name='register')
+        label(for='password') Password :
+        input#password(name='password' type='password' placeholder='Type Your Password here')
+        span#pwdresult
+  #TimeContainer
+    #Time
+      h2 Time Until the end of the semester
+      hr
+    #content2
+      span#TimeResult
+  #weatherContainer
+    #weatherHeader
+      h2 weather
+      hr
+    #weatherContent
+      p#weatherStatus
+      div
+        span Coordinates:
+        input#latitude-input(type='text' placeholder='Latitude')
+        input#longitude-input(type='text' placeholder='Longitude')
+      div
+        button#find-me(type='button') Auto-Find me!
+        button#get-weather-btn(type='button') Find The Weather!
+      #weatherOutput
+        p#temp-display
+        p#cloud-cover-display
+        p#sunrise-display
+        p#sunset-display
+      // Interesting fact. We're legally required to put this here.
+      a(href='https://open-meteo.com/') Weather data by Open-Meteo.com
+      a(href='https://sunrise-sunset.org/') Sunrise and sunset data by sunrise-sunset.org
+
+#ClickContainer
+  #Click
+    h2 Click Toy
+      hr
+      button#clickButton(type = 'button') 
+        div#Count ClickMe #{clickerCount}

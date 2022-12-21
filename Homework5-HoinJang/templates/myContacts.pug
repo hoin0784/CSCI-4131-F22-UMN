@@ -1,0 +1,96 @@
+doctype html
+html(lang="en")
+head
+    meta(charset='UTF-8')
+    title CSCI4131 homework5(myContacts) - Hoin Jang
+    link(href='resources/css/myStyle.css' rel='styleSheet' type='text/css')
+    script(defer='' src='resources/js/myContacts.js')
+     
+body
+    include theNav.pug
+    
+    h1 My Primary Contacts
+
+    .tableContainer
+        
+        table#myContactsTable
+    
+            tr
+                th(onclick='sortTable(1)') Name
+                th Location
+                th Contact Information
+                th(onclick='sortTable(2)') email
+                th website
+
+            tr
+                td Minnesota Golden Gophers football
+      
+                td#Address2
+                    | 420 23rd Ave SE
+                    br
+                    |  Minneapolis, MN 55455 
+                    img.Stadium(src='resources/images/Minnesota_football_stadium.png' alt='Stadium')
+      
+                td 612-625-5000
+                td
+                    a(href='mailto:gophersports@umn.edu')  Football-Email
+                td
+                    a(href='https://gophersports.com/' target='_blank') gophersports website
+    
+            tr
+                td Hoin Jang
+      
+                td#Address1
+                    | 900 Washing st Ave SE
+                    br
+                    |  Minneapolis, MN 55414
+                    img.Dinnaken(src='resources/images/Dinnaken_properties.png' alt='Dinnaken')
+                td 612-598-9810
+                td
+                    a(href='mailto:jang0064@umn.edu')  My-Email
+                td
+                    a(href='https://m.facebook.com/people/Jang-Hoin/100005161627245/' target='_blank') Hoin&apos;s Facebook
+    
+            tr
+                td Youtube
+    
+                td#Address3
+                    | 901 Cherry Avenue
+                    br
+                    |  San Bruno, CA 94066
+                    img.Youtube(src='resources/images/Youtube.png' alt='Youtube')
+                td 650-253-0001
+                td
+                    a(href='mailto:copyright@youtube.com ') Youtube-Email
+                td
+                    a(href='https://youtube.com' target='_blank') Youtube official Website
+    
+            tr
+                td Umn IT service center
+    
+                td#Address4
+                    | 200, 55455 Union St SE Storage Room
+                    br
+                    |  Minneapolis, MN 55455
+                    img.UmnIT(src='resources/images/UmnIT.png' alt='UmnIT')
+                td 612-625-0876
+                td
+                    a(href='mailto:csehelp@umn.edu') CSEIT-Email 
+                td
+                    a(href='https://cse.umn.edu/cseit/get-help' target='_blank')  Umn CSE IT Center link
+
+            tr
+                td University Recreation and Wellness Center
+      
+                td#Address5
+                    | 123 SE Harvard St
+                    br
+                    |  Minneapolis, MN 55455
+                    img.RecCenter(src='resources/images/RecCenter.png' alt='RecCenter')
+                td 612-626-9222
+                td
+                    a(href='mailto:recwell@umn.edu')  Gym-email
+                td
+                    a(href='https://recwell.umn.edu/' target='_blank')  Recreation Center Website
+                    
+        img#GopherPic(src='resources/images/gophers-mascot.png' alt='Gopher')

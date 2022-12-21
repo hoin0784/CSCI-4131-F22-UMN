@@ -1,0 +1,13 @@
+nav#naviPart
+   a(href='myAboutMe' ) About me 
+   a(href='myContacts') MyContacts 
+   a(href='myWidgets' )  MyWidgets
+   a(href="contactLog") ContactLog
+   a(href='contactMe' ) Contact me
+   // if username === undefined
+   if username === undefined
+      a(href='login') login
+   else
+      a(href='login') #{username}
+
+   //- a(href='myAboutMe' target='_blank')  About me          

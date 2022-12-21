@@ -1,0 +1,55 @@
+doctype html
+html(lang="en")
+head
+    meta(charset='UTF-8')
+    title CSCI4131 homework5(myContacts) - Hoin Jang
+    link(href='resources/css/myStyle.css' rel='styleSheet' type='text/css')
+    script(defer='' src='resources/js/myContacts.js')
+     
+body
+    include theNav.pug
+    
+    h1 My Contact log
+    form(action="/contactLog" method = "get")
+        div#button
+            input(type='radio' name='category' value='All')
+            | All
+            input(type='radio' name='category' value='question')   
+            | Question
+            input(type='radio' name='category' value='comment')
+            | Comment
+            input(type='radio' name='category' value='concern')
+            | Concern 
+            input(type='submit' value='filter')
+
+    if Info.length === 0
+        div#NoMessage
+            |No Message found!
+    else
+        .tableContainer
+            table#myContactsTable
+                tr
+                    th from
+                    th title
+                    th category
+                    th message 
+                each n of Info
+                    tr  
+                        if n.link      
+                            td 
+                                a(href = `${n.link}`) #{n.username}
+                                br
+                                |   
+                                a(href = `mailto:${n.email}`) #{n.email}
+                                td  #{n.postTitle}
+                            td  #{n.category}
+                            td  #{n.message}
+                        else
+                            td  #{n.username} 
+                                br
+                                |   
+                                a(href= `mailto:${n.email}`) #{n.email}
+                            td  #{n.postTitle}
+                            td  #{n.category}
+                            td#message  #{n.message}
+                            

@@ -227,7 +227,7 @@ class HTTPServer:
     Our actual HTTP server which will service GET, POST, and HEAD requests.
     """
 
-    def __init__(self, host="localhost", port=9001, directory="."):
+    def __init__(self, host="localhost", port=9002, directory="."):
         print(f"Server started. Listening at http://{host}:{port}/")
         self.host = host
         self.port = port

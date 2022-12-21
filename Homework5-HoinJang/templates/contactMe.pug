@@ -1,0 +1,78 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title CSCI4131 homework5(contactMe) - Hoin Jang
+  link(href='resources/css/myStyle.css' rel='styleSheet' type='text/css')
+  script(defer='' src='resources/js/contactMe.js')
+body   
+  include theNav.pug
+    
+if checkMessage === 1
+    div#succeed
+      p
+        | Your message has been received
+else if checkMessage === 2
+    div#fail
+      p
+        | Your message fail to be received
+.wrapper
+  .card
+    form(action='/contactMe' method='post')
+      h1 Contact Me
+      p
+        | Required fields are marked with 
+        em *
+      label(for='postTitle') Title: 
+      em *
+      br
+      input#postTitle(type='text' name='postTitle' required='')
+      br
+      label(for='email')
+        | Email: 
+        em *
+        br
+      input#email(type='text' name='email' required='')
+      br
+      label(for='username')
+        | Username: 
+        em *
+        br
+      input#username(type='text' name='username' required='')
+      br
+      label(for='link')
+        | Link: 
+        br
+      input#link(type='url' name='link')
+      br
+      #WrapFieldAndMessage
+        #field
+          // The <fieldset> tag is used to group related elements in the <form> element into one group.
+          fieldset
+            // <legend> is a tag that gives a title to the grouping section
+            legend
+              | Category of Message: 
+              em *
+            input#question(type='radio' name='category' value='question' required='')
+            |  Question
+            br
+            input#comment(type='radio' name='category' value='comment' required='')
+            |  Comment
+            br
+            input#concern(type='radio' name='category' value='concern' required='')
+            |  Concern 
+            br
+        // This message will be hidden unill the user is concerned button
+        #Concern_Message
+          | In order to best address your concern, 
+          br
+          | please make sure to list the specfic way 
+          br
+          | in which I have wronged you
+      label(for='text')
+        | Message: 
+        em *
+          br
+          div#textarea
+            textarea(name='message' rows='5' cols='25' required='')
+          br
+      input(type='submit' value='submit')

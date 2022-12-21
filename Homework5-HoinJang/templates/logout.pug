@@ -1,0 +1,20 @@
+doctype html 
+html(lang="en")
+head 
+    meta(charset="UTF-8")
+    title CSCI4131 homework5(login) - Hoin Jang
+    link(href='resources/css/myStyle.css' rel='styleSheet' type='text/css')
+body
+
+include theNav.pug
+
+.wrapper
+  .card
+    form(action = "/login" method ="post")
+        h1 You are now currently logged in!
+        h1 Do you want to log out?
+            |
+            br
+            input(type='submit' value='logout')
+
+    
