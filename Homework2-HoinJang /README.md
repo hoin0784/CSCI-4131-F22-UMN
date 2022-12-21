@@ -6,6 +6,7 @@
     I have used google font style. At the top of the page. Put the hover when the user mouse over the navigation bar.
 
 Figure1: "myAboutMe.html"
+
 <img src = "resources/screenshot/Aboutme.png">
 <img src = "resources/screenshot/Aboutme2.png">
 
