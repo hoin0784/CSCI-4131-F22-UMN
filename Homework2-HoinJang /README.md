@@ -7,7 +7,7 @@
 
 Figure1: "myAboutMe.html"
 
-<img src = "resources/screenshot/Aboutme.png">
+<img src = "resources/screenshot/AboutMe.png">
 <img src = "resources/screenshot/Aboutme2.png">
 
 ## 2. myContacts
