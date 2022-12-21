@@ -24,6 +24,7 @@ Figure2 "myContacts.html"
     These widget pages have two core skills, such as practicing HTML list and embedding content from social media services(Youtube, Twitter)
 
 Figure3 "myWidgets.html"
+
 <img src ="screenshot/Widget1.png"><br
                                        
 Figure4 "myWidgets.html" <br>
