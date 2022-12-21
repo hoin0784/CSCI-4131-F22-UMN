@@ -1,6 +1,4 @@
 # CSCI-4131-F22-UMN
-
-# CSCI-4131-F22-UMN
     The output or photos of the results are written in READ.md for each homework.
 
 ## Homework 1 (HTML, CSS)
