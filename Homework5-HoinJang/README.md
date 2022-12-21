@@ -89,6 +89,8 @@ Figure 6: Since the no form is submitted, it is showing "No message found!"
 
 Figure 7: When the user form submitted a form from the contact me and take the data to the contact log.
 
+<img src = "resources/screenshot/8.png">
+
 Figure 8: After submitting a few more forms.
 
 <img src = "resources/screenshot/more.png">
