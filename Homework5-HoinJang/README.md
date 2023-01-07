@@ -13,7 +13,7 @@
     If you look at the package JSON I have downloaded:
         1. express
         2. express-session
-        3.MySQL
+        3. MySQL
         4. pug
         5. nodemon
 
